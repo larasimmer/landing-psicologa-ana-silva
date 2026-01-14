@@ -1,7 +1,8 @@
+# Deploy: https://larasimmer.github.io/landing-psicologa-ana-silva/
+
 # Landing Page - Psicóloga Ana Silva
 
 Este projeto foi desenvolvido com foco em demonstrar habilidades de criação de landing pages institucionais voltadas à conversão, aplicando boas práticas de UX, acessibilidade e SEO, comuns em projetos reais para profissionais liberais e pequenos negócios.
-
 
 ## Tecnologias Utilizadas
 
