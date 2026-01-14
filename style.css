@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 90px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #8B3A62;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+
+.header nav a:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 1;
+}
+
+.header nav .contact-btn {
+    color: white;
+}
+
+.contact-btn {
+    text-decoration: none;
+    border-radius: 12px;
+    color: white;
+    background-color: #A24A74;
+    padding: 10px 12px;
+}
+
+.header img {
+    max-width: 220px;
+}
+
+.header .whatsapp {
+    background-color: #919E82;
+    position: fixed;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+
+.header .whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.header .whatsapp i {
+    font-size: 28px;
+    color: white;
+}
+
+.hero {
+    background-image: url("images/foto-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(246, 242, 244, 0.75);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 0 60px;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  color: #8B3A62;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #2F4F6F;
+  margin-bottom: 50px;
+}
+
+.about-me {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+}
+
+.about-me img {
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.about-me h3 {
+    font-size: 30px;
+    color: #8B3A62;
+    margin: 0;
+}
+
+.about-me p {
+    color: #2F4F6F;
+}
+
+.services,
+.testimonials,
+.contact-form {
+    padding: 60px;
+}
+
+.services {
+    background-color: #F9F7F8;
+}
+
+.services h3,
+.testimonials h3 {
+    font-size: 30px;
+    color: #8B3A62;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.services .cards {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+.services p {
+    max-width: 300px;
+    color: #2F4F6F;
+}
+
+.services .card {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.services .card div {
+    height: 70px;
+    width: 70px;
+    background-color: #F6E6EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.services i {
+    font-size: 30px;
+    color: #8B3A62;
+}
+
+.services h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #8B3A62;
+    margin-bottom: 0;
+}
+
+.testimonials .testimonials-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials .slider-viewport {
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.testimonials .slider-viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials .small-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonials .small-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    flex: 0 0 calc(50% - 15px);
+    display: flex;
+    align-items: center;
+    background-color: #F6F2F4;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #374151;
+    margin: 0;
+}
+
+.testimonials .arrow {
+    cursor: pointer;
+    font-size: 24px;
+    color: #8B3A62;
+    padding: 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    z-index: 2;
+}
+
+.testimonials .arrow:hover {
+    transform: scale(1.2);
+}
+
+.testimonials .arrow.disabled {
+    opacity: 0.2;
+    cursor: default;
+    pointer-events: none;
+}
+
+.contact-form {
+    background: linear-gradient(
+    135deg,
+    #2E5E8A,
+    #234A6F
+  );
+    color: #FFFFFF;
+}
+
+.contact-form .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form p {
+      opacity: 0.9;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.contact-form label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #8B3A62;
+    color: #FFFFFF;
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #A24A74;
+}
+
+footer p {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #8B3A62;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Responsive Design */
+.logo-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo-desktop {
+        display: none;
+    }
+    header .logo-mobile {
+        display: inline-block;
+        max-width: 80px;
+    }
+    .header {
+        padding: 15px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        position: relative;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #F6F2F4;
+        padding: 80px 20px;
+        gap: 30px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        padding-right: 20px;
+    }
+
+    .header nav.active {
+        right: 0;
+    }
+
+    .header nav a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header .whatsapp {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-me img {
+        max-width: 100%;
+    }
+
+    .services, .testimonials, .contact-form {
+        padding: 40px 20px;
+    }
+
+    .services .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonials .small-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+    }
+
+    .testimonials .arrow {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
