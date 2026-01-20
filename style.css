@@ -1,5 +1,16 @@
 body {
     margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -330,7 +341,6 @@ html {
   padding: 0.9rem;
   border-radius: 8px;
   border: none;
-  font-family: inherit;
 }
 
 .contact-form button {
@@ -375,10 +385,15 @@ footer p {
     .logo-desktop {
         display: none;
     }
+
     header .logo-mobile {
         display: inline-block;
-        max-width: 80px;
     }
+
+    header h1 a {
+        display: flex;
+    }
+
     .header {
         padding: 15px 20px;
         flex-direction: row;
