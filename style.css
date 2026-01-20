@@ -3,6 +3,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 button,
 input,
 select,
@@ -33,7 +38,6 @@ html {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding-right: 90px;
 }
 
 .header nav a {
@@ -70,6 +74,7 @@ html {
     background-color: #919E82;
     position: fixed;
     right: 50px;
+    bottom: 50px;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -93,13 +98,13 @@ html {
 }
 
 .hero {
-    background-image: url("images/foto-1.jpg");
+    background-image: url("images/foto-1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -144,10 +149,12 @@ html {
     display: flex;
     gap: 40px;
     padding: 60px;
+    align-items: center;
 }
 
 .about-me img {
     max-width: 400px;
+    height: auto;
     border-radius: 12px;
 }
 
@@ -381,7 +388,7 @@ footer p {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .logo-desktop {
         display: none;
     }
